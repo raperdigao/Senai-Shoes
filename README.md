@@ -1,2 +1,2 @@
-# senai-shoes
-Criei esta landing page para lojas de tênis, mostrarem as suas marcas e promoções.
+# Senai-Shoes
+Criei este site de sapatos com protótipo do figma e trello em conjunto com o professor Guilherme.

@@ -1,0 +1,389 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+@font-face {
+    font-family: 'font-paragrafo-bold';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'font-titulo-bold';
+    src: url(assets/fonts/TitilliumWeb-Bold.ttf);
+}
+
+/* reset da pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* configurações genericas que vai fazer o conteudo ficar preso no site */
+
+.container-grid {
+    width: 90%;
+    margin: 0 auto;
+    /* max width quanto maior o numero mais proximo fica da borda */
+    max-width: 1400px;
+}
+
+/* começando a estilização do header */
+/* realizar scroll mais suave na minha pagina html */
+html {
+    /* quando clica no link com a ID ele desce mais suave */
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to left, rgb(91, 219, 245), rgb(245, 185, 69));
+}
+
+header {
+    background-color: #4e53d4;
+    height: 90px;
+}
+
+/* header flex é respnsável pela organização dos componetes do header deixa na horizontal */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Sempre colocar border para ver o tamanho da largura */
+/* realiza o espaçamento dos links e deixa os mesmos na horizontal */
+.nav-links {
+    display: flex;
+
+    justify-content: space-evenly;
+    width: 350px;
+
+
+}
+
+/* realiza a estilização dos itens da nossa header */
+.links-header .nav-links a {
+    /* realiza a remoçaõ do sublinhado dos links */
+    text-decoration: none;
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    /* realiza o espaçamento interno dos links */
+    letter-spacing: 1px;
+}
+
+/* efeito de qaundo passa o mouse sobre os links o mesmo de cor para o de preto */
+.links-header .nav-links a:hover {
+    color: black;
+    /* tempo para realizar a mudança de cor */
+    transition: 0.2s;
+
+}
+
+/* remove a estilização que vem por padrão nos links da ul li */
+.links-header .nav-links li {
+    /* remove as bolinha laterais */
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+/* realiza a estilização do input search dentro do header declarando as fontes, as brodas e a largur e altura */
+.input-search input {
+    width: 387px;
+    height: 41px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    /* outline é a broda ao redor */
+    outline: none;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+
+}
+
+/* estilização da cor de fundo do input */
+.input-search {
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+
+}
+
+/* realiza o espaçamenyo dos icones e deixa os mesmos na horizontal */
+.nav-icons {
+    width: 180px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.nav-icons li {
+    list-style-type: none;
+
+}
+
+
+
+/* Estilizar o Banner Allstar e botão */
+.banner {
+    background-image: url(assets/img/eric-masur-AEyam8UN6NY-unsplash\ 1.png);
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+
+.banner-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+
+
+
+}
+
+.banner-info {
+    margin-top: 160px;
+    margin-right: 60px;
+
+
+}
+
+.titulo-banner {
+    padding-left: 8px;
+    font-family: 'font-titulo-bold';
+}
+
+.border-gradient {
+    margin-top: 30px;
+
+
+}
+
+
+
+.button-edit {
+    background-color: #4e53d4;
+    font-family: 'font-titulo-bold';
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+
+}
+
+
+/* Estilização do destaque e do mês */
+.titulo-destaque {
+    font-family: 'font-titulo-bold';
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.subtitulo {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'font-titulo-bold';
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+
+
+}
+
+
+/* Estilização dos Cards */
+
+.cards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+
+
+}
+
+.card-imagem{
+    border-radius: 8px;
+}
+
+
+.itens {
+    border: 2px solid rgba(136, 214, 224, 0.658);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 304px;
+    height: 280px;
+    
+    background-color: rgba(136, 214, 224, 0.658);
+}
+
+
+.itens h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'font-titulo-bold';
+    padding: 6px;
+
+
+}
+
+.itens p {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'font-paragrafo-bold';
+    padding: 6px;
+
+
+}
+
+/* Estilização do Footer */
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 120px;
+
+
+
+
+
+}
+
+.footer-redesocial {
+    width: 200px;
+
+    text-align: center;
+
+
+
+}
+
+.paragrafo-footer {
+    margin-top: 10px;
+}
+
+.imagens-redesocial {
+    margin-top: 20px;
+
+}
+
+.footer-links {
+    margin-left: 10px;
+
+}
+
+.footer-contatos {
+    margin-left: 10px;
+}
+
+
+.input-email {
+    margin-top: 10px;
+    padding: 6px;
+    width: 143px;
+    border-radius: 8px;
+    height: 41px;
+}
+
+.imagens-redesocial{
+    padding: 6px;
+
+}
+.footer-links h1{
+    font-family: 'font-titulo-bold';
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+
+
+}
+
+.footer-links h2{
+    font-size: 15px;
+    font-family: 'font-titulo-bold';
+    color: white;
+    margin-top: 10px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    
+
+}
+
+
+.footer-contatos h1{
+    font-family: 'font-titulo-bold';
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+
+
+}
+
+.footer-contatos h2{
+    font-size: 15px;
+    font-family: 'font-titulo-bold';
+    color: white;
+    margin-top: 10px;
+}
+
+.footer-newsletter h1{
+    font-family: 'font-titulo-bold';
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+
+
+}
+
+
+.btn-enviar {
+    margin-top: 20px;
+    background-color: rgba(245, 185, 69, 1);
+    width: 143px;
+    border-radius: 8px;
+    height: 41px;
+}
+
+.botao-voltar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 120px;
+    margin-bottom: 10px;
+
+}
